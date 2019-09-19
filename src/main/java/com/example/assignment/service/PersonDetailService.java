@@ -4,7 +4,7 @@ import com.example.assignment.model.PersonDetails;
 
 import java.util.List;
 
-public interface PersonGeneralService {
+public interface PersonDetailService {
 
     List<PersonDetails> personGeneralInformationList();
     List<PersonDetails> getListPersonDetails();
