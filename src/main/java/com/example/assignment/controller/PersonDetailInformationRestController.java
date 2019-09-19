@@ -1,7 +1,7 @@
 package com.example.assignment.controller;
 
 import com.example.assignment.model.PersonDetails;
-import com.example.assignment.service.PersonGeneralService;
+import com.example.assignment.service.PersonDetailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -13,7 +13,7 @@ import java.util.List;
 public class PersonDetailInformationRestController {
 
    @Autowired
-   private PersonGeneralService personGeneralService;
+   private PersonDetailService personGeneralService;
 
    @GetMapping("/getListOfPersonFromUSA")
    public List<PersonDetails> personGeneralInformationList()
