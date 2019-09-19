@@ -6,7 +6,6 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
 import java.sql.Time;
-import java.util.Date;
 @Entity(name="person_details")
 @Table(name="person_details")
 public class PersonDetails implements Serializable {
@@ -22,13 +21,12 @@ public class PersonDetails implements Serializable {
     @Column(name="event_name")
     private String eventName;
 
-    @Temporal(TemporalType.DATE)
     @Column(name="scanned_date")
-    private Date scannedDate;
+    private String scannedDate;
 
 
     @Column(name="scanned_time")
-    private Time scannedTime;
+    private String scannedTime;
 
 
     @NotNull
@@ -99,6 +97,22 @@ public class PersonDetails implements Serializable {
 //        this.personGeneralInformation = personGeneralInformation;
 //    }
 
+    public String getScannedTime() {
+        return scannedTime;
+    }
+
+    public void setScannedTime(String scannedTime) {
+        this.scannedTime = scannedTime;
+    }
+
+    public String getScannedDate() {
+        return scannedDate;
+    }
+
+    public void setScannedDate(String scannedDate) {
+        this.scannedDate = scannedDate;
+    }
+
     public Integer getPersonDetailId() {
         return personDetailId;
     }
@@ -131,21 +145,7 @@ public class PersonDetails implements Serializable {
         this.eventName = eventName;
     }
 
-    public Date getScannedDate() {
-        return scannedDate;
-    }
 
-    public void setScannedDate(Date scannedDate) {
-        this.scannedDate = scannedDate;
-    }
-
-    public Time getScannedTime() {
-        return scannedTime;
-    }
-
-    public void setScannedTime(Time scannedTime) {
-        this.scannedTime = scannedTime;
-    }
 
     public String getCompanyName() {
         return companyName;
