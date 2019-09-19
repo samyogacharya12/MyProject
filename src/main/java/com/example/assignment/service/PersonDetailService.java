@@ -9,7 +9,7 @@ public interface PersonDetailService {
 
     void savePersonalDetail(PersonDetails personDetails);
     List<PersonDetails> personGeneralInformationList();
-    void savePersonDetailCSV();
+    void savePersonDetailCSV() throws FileNotFoundException;
     List<PersonDetails> getListPersonDetails();
     List<PersonDetails> findPersonDetailsByStatus(String status);
     List<PersonDetails> findPersonDetailsByScannedBy(String scannedBy);
