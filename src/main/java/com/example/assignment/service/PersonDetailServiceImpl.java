@@ -1,7 +1,6 @@
 package com.example.assignment.service;
 
 import com.example.assignment.model.PersonDetails;
-import com.example.assignment.model.PersonGeneralInformation;
 import com.example.assignment.repository.PersonDetailRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
