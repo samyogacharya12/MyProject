@@ -1,17 +1,17 @@
 package com.example.assignment.service;
 
 import com.example.assignment.model.PersonDetails;
-import com.example.assignment.repository.PersonGeneralRepository;
+import com.example.assignment.repository.PersonDetailRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-public class PersonGeneralServiceImpl implements  PersonGeneralService {
+public class PersonDetailServiceImpl implements PersonDetailService {
 
     @Autowired
-    private PersonGeneralRepository personGeneralRepository;
+    private PersonDetailRepository personGeneralRepository;
 
 
     public List<PersonDetails> personGeneralInformationList()
